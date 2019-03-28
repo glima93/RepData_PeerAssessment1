@@ -94,7 +94,7 @@ The mean of total daily steps is `r mean_steps2`, which is the same as the mean 
 I am working on a computer from Portugal. So, first, let's translate the days of the week of my Windows system into English.
 
 ```{r weekdays_english}
-Sys.setlocale("LC_TIME","English United States.1252")
+Sys.setlocale("LC_TIME","English")
 weekdays(Sys.Date()+0:6)
 ```
 Let's first create a variable that gives us the days of the week and, second, create a factor variable for identifying weekends and weekdays. 
